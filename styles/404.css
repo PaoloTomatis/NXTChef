@@ -1,0 +1,18 @@
+main{
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+.tit{
+    color: #720E00;
+}
+
+.desc{
+    max-width: 350px;
+    text-align: center;
+}

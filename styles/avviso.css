@@ -1,0 +1,51 @@
+main{
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.blocco-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tit-error{
+    color: #ca1800;
+}
+
+.tit-info{
+    color: #0068ca;
+}
+
+.desc{
+    max-width: 350px;
+    text-align: center;
+}
+
+.visual{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-error{
+    background-color: #ca1800;
+}
+
+.visual-info{
+    background-color: #0068ca;
+}
+
+.sign{
+    font-size: 4rem;
+    color:#fff;
+}

@@ -1,0 +1,91 @@
+body, html{ font-family: 'Inter', Arial, Helvetica, sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 0 0;padding: 0;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
+
+.link{
+    color: #720E00;
+}
+
+main{
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+    min-height: 100vh;
+}
+
+.grid{display: flex;align-items: center;width: 100%;flex-direction: row;}
+.col-100{width: 100%; display: flex; align-items: center; flex-direction: column;}
+.col-50{width: 50%; display: flex; align-items: center; flex-direction: column;}
+.col-33{width: 33%; display: flex; align-items: center; flex-direction: column;}
+.col-40{width: 40%; display: flex; align-items: center; flex-direction: column;}
+.col-60{width: 60%; display: flex; align-items: center; flex-direction: column;}
+
+.recipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    border-radius: 12px; 
+}
+
+.recipe:hover {
+    scale: 1.1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.recipes-cont{
+    gap:30px;
+}
+
+.recipe-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.recipe-tit{
+    font-size: 1rem;
+}
+
+.recipe-bar{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.recipe-btn{
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.recipe-btn:hover{
+    scale: 1.1;
+    color: #ff2433;
+}
+
+.distancer{
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+}
+
+@media (max-width:768px) {
+    .grid{flex-direction: column;}
+    .col-100,.col-50,.col-60,.col-40,.col-33{width: 100%;}
+
+    main{padding: 20vh 5% 15vh 5%;}
+
+    .recipe-grid{
+        gap: 30px;
+    }
+}

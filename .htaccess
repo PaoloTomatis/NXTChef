@@ -1,0 +1,34 @@
+RewriteEngine On
+
+RewriteRule ^account$ /account.php [L]
+RewriteRule ^account/([0-9]+)$ /account.php?idUser=$1 [L]
+
+RewriteRule ^search$ /search.php [L]
+RewriteRule ^search/(.*)$ /search.php?search=$1 [L,QSA]
+
+RewriteRule ^recipe/([0-9]+)$ /recipe.php?idRep=$1 [L]
+
+RewriteRule ^recipeSave/([0-9]+)$ /actions/recipeSave.inc.php?idRep=$1 [L]
+
+
+RewriteRule ^404$ /404.php [L]
+
+RewriteRule ^avviso$ /avviso.php [L]
+
+RewriteRule ^login$ /login.php [L]
+
+RewriteRule ^recipe-guide/([0-9]+)$ /recipe-guide.php?idRep=$1&nStep=%2 [L]
+
+RewriteRule ^create-recipe$ /create-recipe.php [L]
+
+RewriteRule ^tutorial$ /tutorial.php [L]
+
+
+ErrorDocument 404 /404.php
+
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+DirectoryIndex search search.php
